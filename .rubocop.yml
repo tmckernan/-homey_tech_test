@@ -1,0 +1,24 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+inherit_from:
+  - .rubocop_todo.yml
+
+AllCops:
+    NewCops: enable
+    Exclude:
+      - 'bin/**/*'
+      - 'db/schema.rb'
+      - 'db/migrate/*'
+      - 'docs/**/*'
+      - 'config/**/*'
+      - 'vendor/bundle/**/*'
+      - 'tmp/**/*'
+      - 'log/**/*'
+
+
+Style/Documentation:
+  Enabled: false
+
